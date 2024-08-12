@@ -1,4 +1,4 @@
-@Library('jenkins-shared-library@main') _
+@Library('shared-repository@main') _
 pipeline {
 
   agent any
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 gitCheckout(
                     branch: "main",
-                    url: "https://github.com/Sathvik1704/jenkins.git"
+                    url: "https://github.com/Sathvik1704/shared-repository.git"
                 )
             }
         }
